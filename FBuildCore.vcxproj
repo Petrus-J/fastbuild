@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Core\Containers\Array.h" />
+    <ClInclude Include="Code\Core\Containers\Forward.h" />
+    <ClInclude Include="Code\Core\Containers\Move.h" />
+    <ClInclude Include="Code\Core\Containers\Singleton.h" />
+    <ClInclude Include="Code\Core\Containers\Sort.h" />
+    <ClInclude Include="Code\Core\Containers\UniquePtr.h" />
+    <ClInclude Include="Code\Core\Containers\UnorderedMap.h" />
+    <ClInclude Include="Code\Core\Env\Assert.h" />
+    <ClInclude Include="Code\Core\Env\Env.h" />
+    <ClInclude Include="Code\Core\Env\ErrorFormat.h" />
+    <ClInclude Include="Code\Core\Env\glibc_compat.h" />
+    <ClInclude Include="Code\Core\Env\MSVCStaticAnalysis.h" />
+    <ClInclude Include="Code\Core\Env\Types.h" />
+    <ClInclude Include="Code\Core\Env\WindowsHeader.h" />
+    <ClInclude Include="Code\Core\FileIO\ConstMemoryStream.h" />
+    <ClInclude Include="Code\Core\FileIO\FileIO.h" />
+    <ClInclude Include="Code\Core\FileIO\FileStream.h" />
+    <ClInclude Include="Code\Core\FileIO\IOStream.h" />
+    <ClInclude Include="Code\Core\FileIO\MemoryStream.h" />
+    <ClInclude Include="Code\Core\FileIO\PathUtils.h" />
+    <ClInclude Include="Code\Core\Math\Constants.h" />
+    <ClInclude Include="Code\Core\Math\Conversions.h" />
+    <ClInclude Include="Code\Core\Math\CRC32.h" />
+    <ClInclude Include="Code\Core\Math\Random.h" />
+    <ClInclude Include="Code\Core\Math\Trig.h" />
+    <ClInclude Include="Code\Core\Math\xxHash.h" />
+    <ClInclude Include="Code\Core\Mem\Mem.h" />
+    <ClInclude Include="Code\Core\Mem\MemDebug.h" />
+    <ClInclude Include="Code\Core\Mem\MemPoolBlock.h" />
+    <ClInclude Include="Code\Core\Mem\MemTracker.h" />
+    <ClInclude Include="Code\Core\Mem\SmallBlockAllocator.h" />
+    <ClInclude Include="Code\Core\Network\Network.h" />
+    <ClInclude Include="Code\Core\Network\NetworkStartupHelper.h" />
+    <ClInclude Include="Code\Core\Network\TCPConnectionPool.h" />
+    <ClInclude Include="Code\Core\Process\Atomic.h" />
+    <ClInclude Include="Code\Core\Process\Mutex.h" />
+    <ClInclude Include="Code\Core\Process\Process.h" />
+    <ClInclude Include="Code\Core\Process\Semaphore.h" />
+    <ClInclude Include="Code\Core\Process\SharedMemory.h" />
+    <ClInclude Include="Code\Core\Process\SystemMutex.h" />
+    <ClInclude Include="Code\Core\Process\Thread.h" />
+    <ClInclude Include="Code\Core\Profile\Profile.h" />
+    <ClInclude Include="Code\Core\Profile\ProfileManager.h" />
+    <ClInclude Include="Code\Core\Reflection\MetaData\MetaData.h" />
+    <ClInclude Include="Code\Core\Reflection\MetaData\MetaDataInterface.h" />
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_File.h" />
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_Hidden.h" />
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_Optional.h" />
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_Path.h" />
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_Range.h" />
+    <ClInclude Include="Code\Core\Reflection\Object.h" />
+    <ClInclude Include="Code\Core\Reflection\PropertyType.h" />
+    <ClInclude Include="Code\Core\Reflection\ReflectedProperty.h" />
+    <ClInclude Include="Code\Core\Reflection\ReflectionInfo.h" />
+    <ClInclude Include="Code\Core\Reflection\ReflectionIter.h" />
+    <ClInclude Include="Code\Core\Reflection\ReflectionMacros.h" />
+    <ClInclude Include="Code\Core\Reflection\ReflectionSettings.h" />
+    <ClInclude Include="Code\Core\Reflection\Struct.h" />
+    <ClInclude Include="Code\Core\Strings\AStackString.h" />
+    <ClInclude Include="Code\Core\Strings\AString.h" />
+    <ClInclude Include="Code\Core\Strings\LevenshteinDistance.h" />
+    <ClInclude Include="Code\Core\Time\Time.h" />
+    <ClInclude Include="Code\Core\Time\Timer.h" />
+    <ClInclude Include="Code\Core\Tracing\Tracing.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFBooleanExpParser.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFFile.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFFileExists.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFKeywords.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFMacros.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFParser.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFStackFrame.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFUserFunctions.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFVariable.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\Function.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionAlias.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCompiler.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCopy.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCopyDir.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCSAssembly.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionDLL.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionError.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionExec.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionExecutable.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionForEach.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionIf.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionLibrary.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionListDependencies.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionObjectList.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionPrint.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionRemoveDir.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionSettings.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionTest.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionTextFile.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionUnity.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionUsing.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVCXProject.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVSProjectExternal.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVSSolution.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionXCodeProject.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\LinkerNodeFileExistsCache.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFToken.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFTokenizer.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFTokenRange.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\Cache.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\CachePlugin.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\CachePluginInterface.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\ICache.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\LightCache.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Error.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriverBase.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CL.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CodeWarriorWii.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CUDA.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_GCCClang.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_Generic.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_GreenHillsWiiU.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_OrbisWavePSSLC.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_QtRCC.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_SNC.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_VBCC.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\FBuild.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\FBuildOptions.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\FBuildVersion.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\FLog.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\AliasNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\CompilerNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\CopyDirNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\CopyFileNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\CSNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\Dependencies.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\DirectoryListNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\DLLNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ExecNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ExeNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\FileNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\LibraryNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\LinkerNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ListDependenciesNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_AllowNonFile.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_EmbedMembers.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_IgnoreForComparison.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_InheritFromOwner.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_Name.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\Node.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\NodeGraph.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\NodeProxy.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ObjectListNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ObjectNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\RemoveDirNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\SettingsNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\SLNNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\TestNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\TextFileNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\UnityNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\VCXProjectNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\VSProjectBaseNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\VSProjectExternalNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\XCodeProjectNode.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\Args.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\BuildProfiler.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\CIncludeParser.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\CompilationDatabase.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\Compressor.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\CtrlCHandler.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\FBuildStats.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\JSON.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\MultiBuffer.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\ProjectGeneratorBase.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\Report.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\ResponseFile.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\SLNGenerator.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\ToolManifest.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\VSProjectGenerator.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\XCodeProjectGenerator.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Protocol\Client.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Protocol\Protocol.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Protocol\Server.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\Job.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\JobQueue.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\JobQueueRemote.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerBrokerage.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerThread.h" />
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerThreadRemote.h" />
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\lz4.h" />
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\lz4frame.h" />
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\lz4frame_static.h" />
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\lz4hc.h" />
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\xxhash.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\Core\Env\Assert.cpp" />
+    <ClCompile Include="Code\Core\Env\Env.cpp" />
+    <ClCompile Include="Code\Core\Env\ErrorFormat.cpp" />
+    <ClCompile Include="Code\Core\FileIO\ConstMemoryStream.cpp" />
+    <ClCompile Include="Code\Core\FileIO\FileIO.cpp" />
+    <ClCompile Include="Code\Core\FileIO\FileStream.cpp" />
+    <ClCompile Include="Code\Core\FileIO\IOStream.cpp" />
+    <ClCompile Include="Code\Core\FileIO\MemoryStream.cpp" />
+    <ClCompile Include="Code\Core\FileIO\PathUtils.cpp" />
+    <ClCompile Include="Code\Core\Math\CRC32.cpp" />
+    <ClCompile Include="Code\Core\Math\Random.cpp" />
+    <ClCompile Include="Code\Core\Mem\Mem.cpp" />
+    <ClCompile Include="Code\Core\Mem\MemDebug.cpp" />
+    <ClCompile Include="Code\Core\Mem\MemPoolBlock.cpp" />
+    <ClCompile Include="Code\Core\Mem\MemTracker.cpp" />
+    <ClCompile Include="Code\Core\Mem\SmallBlockAllocator.cpp" />
+    <ClCompile Include="Code\Core\Network\Network.cpp" />
+    <ClCompile Include="Code\Core\Network\NetworkStartupHelper.cpp" />
+    <ClCompile Include="Code\Core\Network\TCPConnectionPool.cpp" />
+    <ClCompile Include="Code\Core\Process\Mutex.cpp" />
+    <ClCompile Include="Code\Core\Process\Process.cpp" />
+    <ClCompile Include="Code\Core\Process\Semaphore.cpp" />
+    <ClCompile Include="Code\Core\Process\SharedMemory.cpp" />
+    <ClCompile Include="Code\Core\Process\SystemMutex.cpp" />
+    <ClCompile Include="Code\Core\Process\Thread.cpp" />
+    <ClCompile Include="Code\Core\Profile\ProfileManager.cpp" />
+    <ClCompile Include="Code\Core\Reflection\MetaData\MetaData.cpp" />
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_File.cpp" />
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_Hidden.cpp" />
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_Optional.cpp" />
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_Path.cpp" />
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_Range.cpp" />
+    <ClCompile Include="Code\Core\Reflection\Object.cpp" />
+    <ClCompile Include="Code\Core\Reflection\ReflectedProperty.cpp" />
+    <ClCompile Include="Code\Core\Reflection\ReflectionInfo.cpp" />
+    <ClCompile Include="Code\Core\Reflection\ReflectionIter.cpp" />
+    <ClCompile Include="Code\Core\Reflection\Struct.cpp" />
+    <ClCompile Include="Code\Core\Strings\AString.cpp" />
+    <ClCompile Include="Code\Core\Strings\LevenshteinDistance.cpp" />
+    <ClCompile Include="Code\Core\Time\Time.cpp" />
+    <ClCompile Include="Code\Core\Time\Timer.cpp" />
+    <ClCompile Include="Code\Core\Tracing\Tracing.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFBooleanExpParser.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFFile.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFFileExists.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFMacros.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFParser.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFStackFrame.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFUserFunctions.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFVariable.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\Function.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionAlias.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCompiler.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCopy.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCopyDir.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCSAssembly.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionDLL.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionError.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionExec.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionExecutable.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionForEach.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionIf.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionLibrary.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionListDependencies.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionObjectList.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionPrint.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionRemoveDir.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionSettings.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionTest.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionTextFile.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionUnity.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionUsing.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVCXProject.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVSProjectExternal.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVSSolution.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionXCodeProject.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\LinkerNodeFileExistsCache.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFToken.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFTokenizer.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Cache\Cache.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Cache\CachePlugin.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Cache\ICache.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Cache\LightCache.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Error.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriverBase.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CL.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CodeWarriorWii.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CUDA.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_GCCClang.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_Generic.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_GreenHillsWiiU.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_OrbisWavePSSLC.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_QtRCC.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_SNC.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_VBCC.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\FBuild.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\FBuildOptions.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\FLog.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\AliasNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\CompilerNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\CopyDirNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\CopyFileNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\CSNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\Dependencies.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\DirectoryListNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\DLLNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ExecNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ExeNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\FileNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\LibraryNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\LinkerNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ListDependenciesNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_AllowNonFile.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_EmbedMembers.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_IgnoreForComparison.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_InheritFromOwner.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_Name.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\Node.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\NodeGraph.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\NodeProxy.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ObjectListNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ObjectNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\RemoveDirNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\SettingsNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\SLNNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\TestNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\TextFileNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\UnityNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\VCXProjectNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\VSProjectBaseNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\VSProjectExternalNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\XCodeProjectNode.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\Args.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\BuildProfiler.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\CIncludeParser.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\CompilationDatabase.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\Compressor.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\CtrlCHandler.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\FBuildStats.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\JSON.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\MultiBuffer.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\ProjectGeneratorBase.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\Report.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\ResponseFile.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\SLNGenerator.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\ToolManifest.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\VSProjectGenerator.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\XCodeProjectGenerator.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Protocol\Client.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Protocol\Protocol.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Protocol\Server.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\Job.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\JobQueue.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\JobQueueRemote.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerBrokerage.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerThread.cpp" />
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerThreadRemote.cpp" />
+    <ClCompile Include="External\LZ4\lz4-1.9.3\lib\lz4.c" />
+    <ClCompile Include="External\LZ4\lz4-1.9.3\lib\lz4frame.c" />
+    <ClCompile Include="External\LZ4\lz4-1.9.3\lib\lz4hc.c" />
+    <ClCompile Include="External\LZ4\lz4-1.9.3\lib\xxhash.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b51c2a66-fe0a-4742-b1e2-4e7c235f6cce}</ProjectGuid>
+    <RootNamespace>FBuildCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;DEBUG;WIN64;_CRT_SECURE_NO_WARNINGS;__WINDOWS__;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./Code;.\External\LZ4\lz4-1.9.3\lib;.\External\VSProjTypeExtractor</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_RELEASE;RELEASE;WIN64;_CRT_SECURE_NO_WARNINGS;__WINDOWS__;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./Code;.\External\LZ4\lz4-1.9.3\lib;.\External\VSProjTypeExtractor</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

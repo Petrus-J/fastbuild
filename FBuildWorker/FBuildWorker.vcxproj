@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{255f7b0c-eca1-429a-80b9-43e545a07859}</ProjectGuid>
+    <RootNamespace>FBuildWorker</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;DEBUG;WIN64;_CRT_SECURE_NO_WARNINGS;__WINDOWS__;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../Code;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>FBuildCore.lib;ws2_32.lib;Comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_RELEASE;RELEASE;WIN64;_CRT_SECURE_NO_WARNINGS;__WINDOWS__;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../Code;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FBuildCore.lib;ws2_32.lib;Comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Code\Tools\FBuild\FBuildWorker\MainWindowResource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Code\Tools\FBuild\Icons\128x128_blue.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\128x128_grey.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\16x16_blue.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\16x16_grey.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\24x24_blue.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\24x24_grey.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\256x256_blue.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\256x256_grey.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\32x32_blue.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\32x32_grey.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\48x48_blue.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\64x64_blue.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\64x64_grey.png" />
+    <Image Include="..\Code\Tools\FBuild\Icons\blue.ico" />
+    <Image Include="..\Code\Tools\FBuild\Icons\favicon.ico" />
+    <Image Include="..\Code\Tools\FBuild\Icons\tray.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Code\OSUI\OSDropDown.cpp" />
+    <ClCompile Include="..\Code\OSUI\OSFont.cpp" />
+    <ClCompile Include="..\Code\OSUI\OSLabel.cpp" />
+    <ClCompile Include="..\Code\OSUI\OSListView.cpp" />
+    <ClCompile Include="..\Code\OSUI\OSMenu.cpp" />
+    <ClCompile Include="..\Code\OSUI\OSSplitter.cpp" />
+    <ClCompile Include="..\Code\OSUI\OSTrayIcon.cpp" />
+    <ClCompile Include="..\Code\OSUI\OSWidget.cpp" />
+    <ClCompile Include="..\Code\OSUI\OSWindow.cpp" />
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\FBuildWorkerOptions.cpp" />
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Main.cpp" />
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Worker\IdleDetection.cpp" />
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Worker\Worker.cpp" />
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Worker\WorkerSettings.cpp" />
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Worker\WorkerWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Code\OSUI\OSDropDown.h" />
+    <ClInclude Include="..\Code\OSUI\OSFont.h" />
+    <ClInclude Include="..\Code\OSUI\OSLabel.h" />
+    <ClInclude Include="..\Code\OSUI\OSListView.h" />
+    <ClInclude Include="..\Code\OSUI\OSMenu.h" />
+    <ClInclude Include="..\Code\OSUI\OSSplitter.h" />
+    <ClInclude Include="..\Code\OSUI\OSTrayIcon.h" />
+    <ClInclude Include="..\Code\OSUI\OSWidget.h" />
+    <ClInclude Include="..\Code\OSUI\OSWindow.h" />
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\FBuildWorkerOptions.h" />
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\resource.h" />
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\Worker\IdleDetection.h" />
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\Worker\Worker.h" />
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\Worker\WorkerSettings.h" />
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\Worker\WorkerWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Code\Tools\FBuild\FBuildWorker\FBuildWorker.bff" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

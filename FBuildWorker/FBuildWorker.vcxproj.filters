@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Code\Tools\FBuild\FBuildWorker\MainWindowResource.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Code\Tools\FBuild\Icons\64x64_grey.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\128x128_blue.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\128x128_grey.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\256x256_blue.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\256x256_grey.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\blue.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\favicon.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\tray.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\16x16_blue.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\16x16_grey.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\24x24_blue.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\24x24_grey.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\32x32_blue.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\32x32_grey.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\48x48_blue.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Code\Tools\FBuild\Icons\64x64_blue.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\FBuildWorkerOptions.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Worker\Worker.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Worker\WorkerSettings.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Worker\WorkerWindow.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Tools\FBuild\FBuildWorker\Worker\IdleDetection.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\OSUI\OSDropDown.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\OSUI\OSFont.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\OSUI\OSLabel.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\OSUI\OSListView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\OSUI\OSMenu.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\OSUI\OSSplitter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\OSUI\OSTrayIcon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\OSUI\OSWidget.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\OSUI\OSWindow.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\FBuildWorkerOptions.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\Worker\Worker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\Worker\WorkerSettings.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\Worker\WorkerWindow.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\Worker\IdleDetection.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\OSUI\OSListView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\OSUI\OSMenu.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\OSUI\OSSplitter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\OSUI\OSTrayIcon.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\OSUI\OSWidget.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\OSUI\OSWindow.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\OSUI\OSDropDown.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\OSUI\OSFont.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\OSUI\OSLabel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Code\Tools\FBuild\FBuildWorker\resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Code\Tools\FBuild\FBuildWorker\FBuildWorker.bff" />
+  </ItemGroup>
+</Project>

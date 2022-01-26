@@ -120,12 +120,12 @@ CompilerDriver_CL::~CompilerDriver_CL() = default;
             StripTokenWithArg_MSVC( "I", token, index );
 
             // Add full path include
-            outFullArgs.Append( token.Get(), (size_t)( start - token.Get() ) );
-            outFullArgs += m_RemoteSourceRoot;
-            outFullArgs += '\\';
-            outFullArgs += includePath;
-            outFullArgs.Append( end, (size_t)( token.GetEnd() - end ) );
-            outFullArgs.AddDelimiter();
+//             outFullArgs.Append( token.Get(), (size_t)( start - token.Get() ) );
+//             outFullArgs += m_RemoteSourceRoot;
+//             outFullArgs += '\\';
+//             outFullArgs += includePath;
+//             outFullArgs.Append( end, (size_t)( token.GetEnd() - end ) );
+//            outFullArgs.AddDelimiter();
             return true;
         }
     }

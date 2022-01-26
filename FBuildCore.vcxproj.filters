@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Core\Containers\Array.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Containers\Forward.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Containers\Move.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Containers\Singleton.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Containers\Sort.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Containers\UniquePtr.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Containers\UnorderedMap.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Env\Assert.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Env\Env.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Env\ErrorFormat.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Env\glibc_compat.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Env\MSVCStaticAnalysis.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Env\Types.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Env\WindowsHeader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\FileIO\ConstMemoryStream.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\FileIO\FileIO.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\FileIO\FileStream.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\FileIO\IOStream.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\FileIO\MemoryStream.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\FileIO\PathUtils.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Math\Constants.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Math\Conversions.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Math\CRC32.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Math\Random.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Math\Trig.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Math\xxHash.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Mem\Mem.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Mem\MemDebug.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Mem\MemPoolBlock.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Mem\MemTracker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Mem\SmallBlockAllocator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Network\Network.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Network\NetworkStartupHelper.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Network\TCPConnectionPool.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Process\Atomic.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Process\Mutex.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Process\Process.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Process\Semaphore.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Process\SharedMemory.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Process\SystemMutex.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Process\Thread.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Profile\Profile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Profile\ProfileManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_File.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_Hidden.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_Optional.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_Path.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\MetaData\Meta_Range.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\MetaData\MetaData.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\MetaData\MetaDataInterface.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\Object.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\PropertyType.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\ReflectedProperty.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\ReflectionInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\ReflectionIter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\ReflectionMacros.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\ReflectionSettings.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Reflection\Struct.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Strings\AStackString.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Strings\AString.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Strings\LevenshteinDistance.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Time\Time.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Time\Timer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Tracing\Tracing.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\lz4.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\lz4frame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\lz4frame_static.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\lz4hc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="External\LZ4\lz4-1.9.3\lib\xxhash.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\Function.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionAlias.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCompiler.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCopy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCopyDir.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCSAssembly.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionDLL.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionError.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionExec.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionExecutable.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionForEach.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionIf.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionLibrary.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionListDependencies.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionObjectList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionPrint.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionRemoveDir.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionSettings.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionTest.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionTextFile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionUnity.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionUsing.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVCXProject.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVSProjectExternal.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVSSolution.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionXCodeProject.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFToken.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFTokenizer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFTokenRange.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFBooleanExpParser.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFFile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFFileExists.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFKeywords.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFMacros.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFParser.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFStackFrame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFUserFunctions.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\BFFVariable.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\BFF\LinkerNodeFileExistsCache.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\Cache.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\CachePlugin.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\CachePluginInterface.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\ICache.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Cache\LightCache.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CL.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CodeWarriorWii.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CUDA.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_GCCClang.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_Generic.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_GreenHillsWiiU.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_OrbisWavePSSLC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_QtRCC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_SNC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_VBCC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriverBase.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_AllowNonFile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_EmbedMembers.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_IgnoreForComparison.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_InheritFromOwner.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_Name.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\AliasNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\CompilerNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\CopyDirNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\CopyFileNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\CSNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\Dependencies.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\DirectoryListNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\DLLNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ExecNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ExeNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\FileNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\LibraryNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\LinkerNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ListDependenciesNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\Node.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\NodeGraph.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\NodeProxy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ObjectListNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\ObjectNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\RemoveDirNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\SettingsNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\SLNNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\TestNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\TextFileNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\UnityNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\VCXProjectNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\VSProjectBaseNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\VSProjectExternalNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Graph\XCodeProjectNode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\Args.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\BuildProfiler.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\CIncludeParser.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\CompilationDatabase.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\Compressor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\CtrlCHandler.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\FBuildStats.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\JSON.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\MultiBuffer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\ProjectGeneratorBase.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\Report.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\ResponseFile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\SLNGenerator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\ToolManifest.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\VSProjectGenerator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Helpers\XCodeProjectGenerator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Protocol\Client.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Protocol\Protocol.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Protocol\Server.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\Job.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\JobQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\JobQueueRemote.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerBrokerage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerThread.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerThreadRemote.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\Error.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\FBuild.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\FBuildOptions.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\FBuildVersion.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Tools\FBuild\FBuildCore\FLog.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\Core\Env\Assert.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Env\Env.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Env\ErrorFormat.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\FileIO\ConstMemoryStream.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\FileIO\FileIO.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\FileIO\FileStream.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\FileIO\IOStream.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\FileIO\MemoryStream.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\FileIO\PathUtils.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Math\CRC32.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Math\Random.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Mem\Mem.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Mem\MemDebug.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Mem\MemPoolBlock.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Mem\MemTracker.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Mem\SmallBlockAllocator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Network\Network.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Network\NetworkStartupHelper.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Network\TCPConnectionPool.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Process\Mutex.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Process\Process.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Process\Semaphore.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Process\SharedMemory.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Process\SystemMutex.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Process\Thread.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Profile\ProfileManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_File.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_Hidden.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_Optional.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_Path.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\MetaData\Meta_Range.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\MetaData\MetaData.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\Object.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\ReflectedProperty.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\ReflectionInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\ReflectionIter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Reflection\Struct.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Strings\AString.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Strings\LevenshteinDistance.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Time\Time.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Time\Timer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Tracing\Tracing.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="External\LZ4\lz4-1.9.3\lib\lz4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="External\LZ4\lz4-1.9.3\lib\lz4frame.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="External\LZ4\lz4-1.9.3\lib\lz4hc.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="External\LZ4\lz4-1.9.3\lib\xxhash.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\Function.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionAlias.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCompiler.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCopy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCopyDir.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionCSAssembly.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionDLL.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionError.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionExec.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionExecutable.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionForEach.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionIf.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionLibrary.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionListDependencies.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionObjectList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionPrint.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionRemoveDir.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionSettings.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionTest.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionTextFile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionUnity.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionUsing.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVCXProject.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVSProjectExternal.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionVSSolution.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Functions\FunctionXCodeProject.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFToken.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\Tokenizer\BFFTokenizer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFBooleanExpParser.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFFile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFFileExists.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFMacros.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFParser.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFStackFrame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFUserFunctions.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\BFFVariable.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\BFF\LinkerNodeFileExistsCache.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Cache\Cache.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Cache\CachePlugin.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Cache\ICache.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Cache\LightCache.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CL.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CodeWarriorWii.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_CUDA.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_GCCClang.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_Generic.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_GreenHillsWiiU.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_OrbisWavePSSLC.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_QtRCC.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_SNC.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriver_VBCC.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\ExeDrivers\Compiler\CompilerDriverBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_AllowNonFile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_EmbedMembers.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_IgnoreForComparison.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_InheritFromOwner.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\MetaData\Meta_Name.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\AliasNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\CompilerNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\CopyDirNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\CopyFileNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\CSNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\Dependencies.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\DirectoryListNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\DLLNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ExecNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ExeNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\FileNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\LibraryNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\LinkerNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ListDependenciesNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\Node.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\NodeGraph.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\NodeProxy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ObjectListNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\ObjectNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\RemoveDirNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\SettingsNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\SLNNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\TextFileNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\UnityNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\VCXProjectNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\VSProjectBaseNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\VSProjectExternalNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\XCodeProjectNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\Args.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\BuildProfiler.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\CIncludeParser.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\CompilationDatabase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\Compressor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\CtrlCHandler.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\FBuildStats.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\JSON.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\MultiBuffer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\ProjectGeneratorBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\Report.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\ResponseFile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\SLNGenerator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\ToolManifest.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\VSProjectGenerator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Helpers\XCodeProjectGenerator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Protocol\Client.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Protocol\Protocol.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Protocol\Server.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\Job.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\JobQueue.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\JobQueueRemote.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerBrokerage.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerThread.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\WorkerPool\WorkerThreadRemote.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Error.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\FBuild.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\FBuildOptions.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\FLog.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Tools\FBuild\FBuildCore\Graph\TestNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
